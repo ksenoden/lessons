@@ -1,12 +1,12 @@
 <?php
 class House
 {
-    public $owner;
-    public $roof;
-    public $windows;
-    public $doors;
-    public $walls;
-    public $fasade;
+    private $owner;
+    private $roof;
+    private $windows;
+    private $doors;
+    private $walls;
+    private $fasade;
 
     public function build ($o,$r,$w,$d,$wl,$f){
         $this->owner = $o;
