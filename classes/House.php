@@ -1,12 +1,16 @@
 <?php
 class House
 {
+
+    private $a = "a";
     private $owner;
     private $roof;
     private $windows;
     private $doors;
     private $walls;
     private $fasade;
+
+    public static $sum;
 
     public function build ($o,$r,$w,$d,$wl,$f){
         $this->owner = $o;
@@ -15,6 +19,7 @@ class House
         $this->doors = $d;
         $this->walls = $wl;
         $this->fasade = $f;
+        static::$sum++;
     }
 
     public function show (){
@@ -24,5 +29,6 @@ class House
         echo "Дверь ".$this->doors."<br>";
         echo "Стены сделаны из ".$this->walls."<br>";
         echo "Цвет дома ".$this->fasade."<br>";
+        echo $this->a;
     }
 }

@@ -5,6 +5,8 @@ class Block extends House
     private $podjezd;
     private $floor;
 
+    public static $sum;
+
     public function build($o, $r, $w, $d, $wl, $f, $p, $fl)
     {
         parent::build($o, $r, $w, $d, $wl, $f);
